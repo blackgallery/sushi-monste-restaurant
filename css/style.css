@@ -1,0 +1,744 @@
+.info {
+    background: #f0e6ca;
+}
+
+body {
+    
+    color: #c9c1ac;
+    background: url(../img/12928-high-resolution-color-background.jpg)center/cover fixed no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Lobster', cursive;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary-color {
+    color: #d3325f;
+}
+
+.info h2 {
+    word-spacing: 0.6rem;
+}
+
+.info a {
+    transition: color .4s ease-in-out;
+}
+
+.info a:hover {
+    color: #242424;
+}
+
+#header {
+    min-height: calc(100vh - 94px);
+    background:url(../img/286327.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#header::after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #060505;
+    background: linear-gradient(238.72deg, #0044A9 0%, #F700A3 100%), radial-gradient(100% 188.01% at 76.14% 0%, #43DDFF 0%, #FF0000 100%), linear-gradient(0deg, #DB00FF 0%, #14FF00 100%), radial-gradient(59.2% 100% at 50% 0%, #8000FF 0%, #0085FF 100%), radial-gradient(100% 148.07% at 0% 0%, #FC8800 0%, #00FF94 100%);
+background-blend-mode: hard-light, overlay, color-burn, color-burn, normal;
+    opacity: .8;
+    z-index: -1;
+}
+#header a {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.height-90 {
+    min-height: calc(100vh - 94px);
+}
+.banner.text-center {
+    position: relative;
+    z-index: 9999;
+}
+.banner h1 {
+    border-top: 6px dotted #c9c1ac;
+    border-bottom: 6px dotted #c9c1ac;
+ 
+    animation: fromLeft;
+    animation-duration: .6s;
+    animation-delay: .6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main-btn {
+    color: #d3325f;
+    font-size: 2rem;
+    border: 2px solid #d3325f;
+    transition: all .4s ease-in-out;
+}
+
+.main-btn:hover {
+    color: #242424;
+    border: 2px solid #c9c1ac;
+    background: #c9c1ac;
+    border-radius: 30px;
+}
+
+.sushi-btn {
+    animation: fromRight;
+    animation-duration: .7s;
+    animation-delay: .7s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.header-link {
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #c9c1ac;
+    border-radius: 10px;
+    transition: all 2s ease;
+    animation: fromBottom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform: translateX(-50%) !important;
+}
+
+.header-link:hover {
+    color: #242424;
+}
+
+
+@keyframes fromBottom {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+.navbar {
+    background: #f0e6ca;
+    padding: 20px 20px;
+    transition: all .4s ease;
+}
+
+.navbar-background {
+    padding: 5px 20px;
+}
+
+.navbar-brand {
+    font-size: 36px;
+    transition: all .4s ease;
+    font-family: 'Lobster', cursive;
+}
+
+.navbar-brand:hover {
+    color: #242424;
+}
+
+.nav-link {
+    color: #242424;
+    text-decoration: none;
+    transition: all .4s ease;
+    font-size: 22px;
+    padding: 0px 12px !important;
+}
+.navbar .nav-link { 
+}
+.nav-link:hover {
+    color: #d3325f;
+}
+
+.nav-btn {
+    background: transparent;
+    color: #d3325f;
+    border: 2px solid #d3325f;
+    font-size: 23px;
+    transition: all .4s ease;
+
+}
+
+.nav-btn:hover {
+    color: #242424;
+    border: 2px solid #242424;
+    transform: rotate(10deg);
+}
+
+.toggler-btn {
+    border: 2px solid #d3325f;
+    padding: 5px;
+    transition: all .4s ease;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #d3325f;
+    transition: all 0.5s ease;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(-45deg) translate(-5px, -8px);
+}
+#special-items {
+    background-color: rgba(47, 32, 32, 0.93);
+    padding-bottom: 60px !important;
+}
+
+#special-items, #contact, #reviews, .page-banner {
+  position: relative;
+  z-index: 99;
+}
+#special-items:after, #contact:after, #reviews:after, .page-banner:after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #060505;
+    background: linear-gradient(238.72deg, #0044A9 0%, #F700A3 100%), radial-gradient(100% 188.01% at 76.14% 0%, #43DDFF 0%, #FF0000 100%), linear-gradient(0deg, #DB00FF 0%, #14FF00 100%), radial-gradient(59.2% 100% at 50% 0%, #8000FF 0%, #0085FF 100%), radial-gradient(100% 148.07% at 0% 0%, #FC8800 0%, #00FF94 100%);
+    background-blend-mode: hard-light, overlay, color-burn, color-burn, normal;
+    opacity: .2; 
+    z-index: -1; 
+}
+
+#special-items .item-container i {
+    font-size: 25px;
+    position: relative;
+    top: -2px;
+    left: 8px;
+}
+.special_wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    grid-gap: 30px;
+}
+.special_wrap .special {
+    border: 3px solid #d3325f;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between;
+    align-content: space-around;
+    grid-column-gap: 15px;
+}
+#special-items .heading h2, #special-items .heading p {
+    margin-bottom: 20px;
+}
+.item-container {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    transition: all .5s ease;
+}
+
+.item-img {
+    transition: all .5s ease;
+}
+
+.item-container:hover .item-img {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.item-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d3325f;
+    font-size: 2rem;
+    border-top: 3px solid #d3325f;
+    border-bottom: 3px solid #d3325f;
+    transition: all .5s ease;
+    opacity: 0;
+
+}
+
+.item-container:hover .item-link {
+    opacity: 1;
+}
+
+.item-link:hover {
+    color: #c9c1ac;
+    border: 3px solid #c9c1ac;
+    background: #c9c1ac;
+    color: #242424;
+
+}
+
+.item-container:hover {
+    outline: 10px solid #d3325f;
+    outline-offset: 0.8rem
+}
+
+
+#menu { 
+    background: #fff url("../img/cloth-pattern.jpg") repeat center center;
+    background-size: 100% auto;
+    padding-top: 76px;
+    padding-bottom: 90px;
+}
+#menu .heading { 
+    margin-bottom: 20px;
+} 
+
+.special {
+    border: 3px solid #d3325f;
+    position: relative;
+}
+.special p { 
+    color: #444;
+    line-height: 26px;
+    font-size: 20px;
+}
+
+.special-text {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    background: #d3325f;
+    padding: 0 0.4rem;
+}
+
+
+#about {
+    background-image: url(../img/bg-welcome-left.png),url(../img/bg-welcome-left-dish.png), url(../img/bg-welcome-right.png), url(../img/bg-welcome-right-bottom.png);
+    background-repeat: no-repeat;
+    background-position: 30px 0,-33px 277px,right top,right 132px;
+    text-align: center;
+    background-color: #F3ECD2;
+    padding: 100px 0px !important;
+}
+#about h1 {
+    color: #222;
+    font-size: 57px;
+    letter-spacing: 2px;
+}
+#about .sub-tittle {
+    font-size: 27px;
+    color: #222;
+    text-transform: uppercase;
+    margin-top: -6px;
+    font-weight: 500;
+}
+#about p {
+    color: #333;
+}
+#about a {
+    font-size: 18px;
+    padding: 8px 18px;
+}
+.about-pictures {
+    position: relative;
+}
+
+.about-image {
+    position: absolute;
+    width: 200px;
+    transition: all .5s ease;
+    opacity: 0.9;
+    height: 130px;
+}
+
+.img-1 {
+    right: 0%;
+    top: -5%;
+
+}
+
+.img-2 {
+    right: 20%;
+    top: 20%;
+    z-index: 10;
+}
+
+.img-3 {
+    right: 40%;
+    top: 50%;
+    z-index: 20;
+}
+
+.img-4 {
+    right: 40%;
+    top: -5%;
+
+}
+
+.img-5 {
+    right: 0%;
+    top: 50%;
+
+}
+
+.about-image:hover {
+    outline: 10px solid #d3325f;
+    outline-offset: 0.8rem;
+    transform: scale(1.3)rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+
+
+.about-pictures:hover .about-image:not(:hover) {
+    opacity: 0.5;
+
+}
+#reviews {
+    background-color: rgba(47, 32, 32, 0.93);
+    padding: 80px 0px 90px;
+}
+#reviews .heading {
+    margin-bottom: 30px;
+}
+.review-item {
+    background: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.7);
+    clip-path: polygon(5% 0, 100% 0, 93% 100%, 0 100%);
+    background-color: #F3ECD2;
+    padding-left: 35px;
+    padding-right: 100px;
+}
+
+.review-img {
+    width: 150px;
+    margin-top: -18px;
+}
+
+
+#team {
+    background: #fff url("../img/cloth-pattern.jpg") repeat center center; 
+    background-size: 100% auto;
+    padding-top: 76px !important;
+    padding-bottom: 70px !important;
+}
+#team .card-body {
+    padding-top: 5px;
+    margin-top: -18px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+#team .card-body p {
+    font-size: 20px;
+    color: #333;
+    letter-spacing: 2px;
+    margin-top: -5px;
+}
+#team .card img {
+    width: 100%;
+}
+.team-icons a {
+    color: #3b5999;
+    transition: all 2s ease-in-out;
+}
+
+.item-icons a:hover {
+    color: #242424;
+    transform: translateY(-5px)
+}
+
+
+.height-60 {
+    min-height: 60vh;
+}
+#contact {  
+    background-color: rgba(47, 32, 32, 0.93);
+    padding: 80px 0px 80px;
+}
+
+#contact .embed-responsive { 
+    height: 278px;
+}
+#contact .card {
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 2s ease;
+}
+#contact  .card-body {
+    padding-top: 0px;
+}
+#contact .card:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .card-header {
+    color: #d3325f;
+}
+
+#contact .input-group-text {
+    background: #d3325f;
+    border-color: #d3325f;
+    color: #242424;
+}
+
+
+#contact .card input {
+    color: #606060;
+}
+
+#contact .card input:placeholder {
+    color: #606060;
+}
+
+.contact-btn {
+    color: #d3325f;
+    border-color: #d3325f;
+    background: transparent;
+    transition: all 2s ease-in-out;
+}
+
+.contact-btn:hover {
+    background: #c9c1ac;
+    color: #d3325f;
+    border-color: #c9c1ac;
+
+}
+
+#back-to-top {
+    background: #c9c1ac;
+    border-radius: 10px;
+    display: inline-block;
+    z-index: 99;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 70px; 
+    left: 20px;
+}
+
+/* Heading*/
+.heading h2 {
+    font-size: 55px;
+    color: #222;
+    letter-spacing: 2px;
+}
+.heading {
+    text-align: center;
+    width: 74%;
+    margin: auto;
+}
+.heading p {  
+   color: #444; 
+   line-height: 26px;
+}
+.heading.text-white p,
+.heading.text-white h2{
+    color: #ddd;
+}
+ 
+ 
+.border_btom h2::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #d3325f;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+.border_btom h2 {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 12px;
+}
+
+
+/* Menu Section */
+
+.menu-section {
+    background: #fff url("cloth-pattern.jpg") repeat center center;
+    background-size: 100% auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.menu-section .col p {
+    color: #333;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+}
+
+.menu-section .col .title {
+    display: inline-block; 
+    line-height: 110px;
+    padding-left: 90px;
+    background: transparent url("https://brasseriecayman.com/wp-content/themes/brasserie-bbandp/images/icon-knife-fork.png") no-repeat left top;
+    padding-bottom: 0;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+}
+.menu-section .title + p {
+    min-height: 136px;
+    padding-bottom: 1em;
+}
+.menu-section .btn.red {
+    background-color: #be3135;
+    background: linear-gradient(135deg, transparent 5px, #be3135 0) top left, linear-gradient(225deg, transparent 5px, #be3135 0) top right, linear-gradient(315deg, transparent 5px, #be3135 0) bottom right, linear-gradient(45deg, transparent 5px, #be3135 0) bottom left;
+    background-repeat: repeat, repeat, repeat, repeat;
+    background-size: auto, auto, auto, auto;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 7px 20px;
+    color: #fff;
+    font-size: 18px;
+}
+.php_message2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 65px;
+    z-index: 999;
+    top: 0px;
+    text-align: center;
+    background-color: rgba(23, 12, 12, 0.88);
+    color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.php_message2.close,
+.close_msg.close{
+  display: none
+}
+.close_msg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 65px;
+    z-index: 999;
+    top: 0px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: end;
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+/* Footer */
+.footer_sec .info-icons {
+    padding-top: 18px !important;
+}
+
+
+/* Single Page */
+
+
+.page-banner {
+  display: grid;
+  height: 300px;
+  align-items: center;
+  background-color: rgba(17, 7, 7, 0.89);
+}
+.page-banner h3 {
+  font-size: 55px;
+  letter-spacing: 3px;
+}
+.page-banner a {
+  color: #e1d9d9;
+}
+.page-banner {
+}
+.page-banner p {
+  font-size: 18px;
+}
+
+#special-items.special_item_pg, 
+.contact_pg, 
+.reviews_pg{
+    background: #fff url("../img/cloth-pattern.jpg") repeat center center; 
+    background-size: 100% auto;
+    padding-top: 76px !important;
+    padding-bottom: 70px !important;
+
+}
+#special-items.special_item_pg::after,
+#reviews.reviews_pg::after,
+#contact.contact_pg::after{
+    opacity: 0;
+}
+
+#contact.contact_pg .card {
+    background: rgba(43, 23, 23, 0.87); 
+}
+
+.reviews_pg .review-item {
+    background-color: #E6DDBF;
+    padding-left: 10px;
+    padding-right: 60px;
+}
+.reviews_pg .row {
+    display: flex;
+    row-gap: 30px;
+}
